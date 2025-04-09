@@ -2,37 +2,136 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Budget Backup Buddy</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .feature {
+      flex: 1 1 30%;
+      background: #fff;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .feature h3 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      background: #0077cc;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background: #005fa3;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+      }
+
+      .feature {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <h1 style="text-align:center;">Budget Backup Buddy</h1>
-  <p style="text-align:center;"><em>Simple, Secure, Automated Backups for Freelancers & Startups</em></p>
+  <header>
+    <h1>Budget Backup Buddy</h1>
+    <p>Simple, Secure, Automated Backups for Freelancers & Startups</p>
+  </header>
 
-  <hr>
+  <main>
+    <p>
+      Tired of losing valuable data? Whether you’re a freelancer, small business, or startup founder, data loss can be devastating. That’s why I created <strong>Budget Backup Buddy</strong> — a simple and affordable cloud backup solution powered by AWS S3 + Lambda.
+    </p>
 
-  <h2>Why Budget Backup Buddy?</h2>
-  <p>
-    Losing valuable data can be devastating — especially for freelancers and startups. With Budget Backup Buddy, you get a simple, affordable cloud backup solution built on AWS S3 + Lambda.
-  </p>
+    <div class="features">
+      <div class="feature">
+        <h3>💾 Automatic Backups</h3>
+        <p>Set it once and let it handle your file backups without any manual steps.</p>
+      </div>
+      <div class="feature">
+        <h3>🔒 Secure Storage</h3>
+        <p>Files are safely stored in the cloud using reliable AWS S3 buckets.</p>
+      </div>
+      <div class="feature">
+        <h3>💸 Budget Friendly</h3>
+        <p>Protect your data for under $5/month – perfect for small business budgets.</p>
+      </div>
+    </div>
 
-  <h2>Features</h2>
-  <ul>
-    <li><strong>Automatic Backups:</strong> Set it once and forget it.</li>
-    <li><strong>Secure Cloud Storage:</strong> Files are safely stored using AWS S3.</li>
-    <li><strong>Budget-Friendly:</strong> Costs under $5/month — perfect for small teams.</li>
-  </ul>
+    <div class="cta">
+      <a href="[INSERT_BLOG_LINK]" target="_blank">Read the Full Setup Guide</a>
+    </div>
+  </main>
 
-  <h2>Get Started</h2>
-  <p>
-    Ready to protect your data? Follow the full setup guide on my blog and start backing up your files today!
-  </p>
-  <p><a href="[INSERT_BLOG_LINK]" target="_blank">👉 Read the Full Guide Here</a></p>
-
-  <hr>
-
-  <p style="text-align:center;">&copy; 2025 Budget Backup Buddy | Created by Bakre Jamiu</p>
+  <footer>
+    &copy; 2025 Budget Backup Buddy. Created by Bakre Jamiu.
+  </footer>
 
 </body>
 </html>
